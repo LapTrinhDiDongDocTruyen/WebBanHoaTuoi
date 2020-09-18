@@ -1,0 +1,52 @@
+﻿@model WEB_BANHOATUOI.Models.HOA
+@using WEB_BANHOATUOI.Models;
+@{
+    ViewBag.Title = "XoaHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <h5 style="text-align:center">XÁC NHẬN XÓA HOA</h5>
+    <div>
+        <dl>
+            <dt>Ảnh bìa</dt>
+            <dd>
+                <img width="300px" class="img-responsive" alt="Sản phẩm 1" src="~/Hinh/@Model.ANHBIA">
+            </dd>
+            <dt>Tên Hoa</dt>
+            <dd>
+                @Html.DisplayFor(model => model.TENHOA)
+            </dd>
+            <dt>Giá bán</dt>
+            <dd>
+                <h5 style="color:red">@Html.DisplayFor(model => model.GIABAN) VNĐ</h5>
+            </dd>
+            <dt>Mô tả</dt>
+            <dd>
+                @Html.DisplayFor(model => model.MOTA)
+            </dd>
+            <dt>Ngày cập nhật</dt>
+            <dd>
+                @Html.DisplayFor(model => model.NGAYCAPNHAT)
+            </dd>
+            <dt>Chủ đề</dt>
+            <dd>
+                @Html.DisplayFor(model => model.MACHUDE)
+            </dd>
+            <dt>Loại Hoa</dt>
+            <dd>
+                @Html.DisplayFor(model => model.LOAI)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken();
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-danger" />
+                @Html.ActionLink("Trở Về", "QLHoa", new { @class="btn btn-warning"})
+            </div>
+        }
+    </div>
+</div>
+

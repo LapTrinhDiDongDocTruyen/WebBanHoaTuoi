@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "ThemMoiHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using WEB_BANHOATUOI.Models;
+@model WEB_BANHOATUOI.Models.HOA
+<div class="container">
+    <h5 style="text-align:center">THÊM HOA MỚI</h5>
+    @using (Html.BeginForm("ThemMoiHoa", "HomeAdmin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TENHOA, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TENHOA)
+                    @Html.ValidationMessageFor(model => model.TENHOA)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GIABAN, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GIABAN)
+                    @Html.ValidationMessageFor(model => model.GIABAN)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MOTA, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <textarea name="Mota">Mô tả thông tin hoa..</textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ANHBIA, new { @class = "control-label col-md-2" })
+                <div class="form-group">
+                    <input type="file" name="fileUp" />
+                    @ViewBag.ThongBao
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NGAYCAPNHAT, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="date" name="ngaycapnhat" />
+                    @Html.ValidationMessageFor(model => model.NGAYCAPNHAT)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MACHUDE, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("MACHUDE")
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.LOAI, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("Loai")
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Thêm mới" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Trở về trang QL Hoa", "QLHoa", "HomeAdmin", new { @class = "btn btn-warning" })
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

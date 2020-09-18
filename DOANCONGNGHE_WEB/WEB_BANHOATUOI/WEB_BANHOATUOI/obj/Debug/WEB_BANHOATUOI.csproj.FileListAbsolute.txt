@@ -1,0 +1,240 @@
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+C:\Users\huynh\Desktop\Công Nghệ Web\DOANMONHOCWEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+D:\DuyThaiIT\Công Nghệ Web\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.dll
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.xml
+F:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+E:\WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\mscorlib.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.WebRequest.dll
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.WebRequest.xml
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\normidna.nlp
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\normnfc.nlp
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\normnfd.nlp
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\normnfkc.nlp
+C:\Users\Dilp\Desktop\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\normnfkd.nlp
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WEB_BANHOATUOI.pdb
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Antlr3.Runtime.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Optimization.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Providers.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\WebGrease.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\PagedList.Mvc.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\EntityFramework.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\Newtonsoft.Json.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Net.Http.Formatting.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Http.WebHost.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Mvc.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.Razor.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.csprojResolveAssemblyReference.cache
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.dll
+C:\Users\Dilp\Desktop\WEB\DOANCONGNGHE_WEB\WEB_BANHOATUOI\WEB_BANHOATUOI\obj\Debug\WEB_BANHOATUOI.pdb

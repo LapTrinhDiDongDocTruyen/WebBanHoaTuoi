@@ -1,0 +1,67 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model PagedList.PagedList<WEB_BANHOATUOI.Models.LOAI>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "QLLoaiHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div><br /></div>
+<div class="container">
+    <div class="col-md-3">
+        <br />
+    </div>
+    <div class="col-md-6">
+        <form action ="@Url.Action("TimKiemLoaiHoa", "HomeAdmin")" method="post">
+            <input class="form-control" type="search" name="txttk" placeholder="Search" />
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <br />
+    </div>
+</div>
+<div class="container">
+
+    <p style="text-align:center">
+         <a href="@Url.Action("ThemLoaiHoa","HomeAdmin")" class="btn btn-primary">Thêm Mới Loại Hoa</a>
+    </p>
+    <table class="table table-hover table-condensed" id="cart">
+        <thead>
+            <tr>
+                <th style="width: 10%">MÃ LOẠI</th>
+                <th style="width: 40%">TÊN LOẠI HOA</th>
+                <th style="width: 30%">CHỨC NĂNG</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MALOAI)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.TENLOAI)</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash-o"><a class="btn btn-danger btn-sm" href="@Url.Action("XoaLoaiHoa", "HomeAdmin", new { id = item.MALOAI})" style="color: white">Xóa</a></i>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-info btn-sm">
+                            <i class="fa fa-edit">
+                                <a class="btn btn-priamry btn-sm" href="@Url.Action("CapNhatLoai", "HomeAdmin", new { id = item.MALOAI})" style="color: white">Cập nhật</a></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
+<div class="container">
+<p style="color:blue; text-align:center">Trang@(Model.PageCount < Model.PageNumber ?0: Model.PageNumber)/@Model.PageCount:</p>
+<div class="pagination justify-content-center">
+       @Html.PagedListPager(Model, page => Url.Action("QLLoaiHoa","HomeAdmin", new {page = page}))
+</div>
+
+</div>
+<link href="~/Content/bootstrap4.0/css/PhanTrang.css" rel="stylesheet" />
+
+

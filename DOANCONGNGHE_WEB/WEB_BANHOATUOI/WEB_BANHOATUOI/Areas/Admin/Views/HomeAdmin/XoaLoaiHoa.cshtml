@@ -1,0 +1,33 @@
+﻿@model WEB_BANHOATUOI.Models.LOAI
+@using WEB_BANHOATUOI.Models;
+@{
+    ViewBag.Title = "XoaLoaiHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <h5 style="text-align: center">XÁC NHẬN XÓA LOẠI HOA</h5>
+    <div class="container">
+        <div>
+            <dl>
+                <dt>Mã Loại</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MALOAI)
+                </dd>
+                <dt>Tên Loại</dt>
+                <dd>
+                    @Html.DisplayFor(model => model.TENLOAI)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken();
+                <div class="form-actions no-color">
+                    <input type="submit" value="Xóa" class="btn btn-danger" />
+                    @Html.ActionLink("Trở Về", "QLLoaiHoa", new { @class = "btn btn-warning" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

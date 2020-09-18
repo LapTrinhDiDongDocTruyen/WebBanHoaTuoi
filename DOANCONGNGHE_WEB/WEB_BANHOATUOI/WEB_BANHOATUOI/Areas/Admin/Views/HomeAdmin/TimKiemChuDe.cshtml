@@ -1,0 +1,56 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model List<CHUDE>
+@{
+    ViewBag.Title = "TimKiemChuDe";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div><br /></div>
+<div class="container">
+    <div class="col-md-3">
+        <br />
+    </div>
+    <div class="col-md-6">
+        <form action ="@Url.Action("TimKiemChuDe", "HomeAdmin")" method="post">
+            <input class="form-control" type="search" name="txttk" placeholder="Search" />
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <br />
+    </div>
+</div>
+<div class="container">
+
+    <p style="text-align: center">
+        <a href="@Url.Action("ThemChuDe", "HomeAdmin")" class="btn btn-primary">Thêm Chủ Đề</a>
+    </p>
+    <table class="table table-hover table-condensed" id="cart">
+        <thead>
+            <tr>
+                <th style="width: 10%">MÃ CHỦ ĐỀ</th>
+                <th style="width: 40%">TÊN CHỦ ĐỀ</th>
+                <th style="width: 30%">CHỨC NĂNG</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MACHUDE)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.TENCHUDE)</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash-o"><a class="btn btn-danger btn-sm" href="@Url.Action("XoaChuDe", "HomeAdmin", new { id = item.MACHUDE })" style="color: white">Xóa</a></i>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-info btn-sm">
+                            <i class="fa fa-edit">
+                                <a class="btn btn-priamry btn-sm" href="@Url.Action("CapNhatChuDe", "HomeAdmin", new { id = item.MACHUDE })" style="color: white">Cập nhật</a></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>

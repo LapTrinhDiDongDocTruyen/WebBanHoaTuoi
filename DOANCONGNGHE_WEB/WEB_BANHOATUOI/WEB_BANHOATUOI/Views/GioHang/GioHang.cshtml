@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+@using WEB_BANHOATUOI.Models;
+@model List<GIOHANG>
+<div class="container"> 
+ <table class="table table-hover table-condensed" id="cart"> 
+  <thead> 
+   <tr> 
+    <th style="width:50%">Tên sản phẩm</th> 
+    <th style="width:10%">Giá</th> 
+    <th style="width:8%">Số lượng</th> 
+    <th class="text-center" style="width:22%">Thành tiền</th> 
+    <th style="width:10%"> </th> 
+       <th style="width:10%"> </th>
+   </tr> 
+  </thead> 
+      @foreach(var item in Model)
+      {
+          <tbody>
+      <tr> 
+   <td data-th="Product"> 
+    <div class="row"> 
+     <div class="col-sm-3 hidden-xs"><img width="100" class="img-responsive" alt="Sản phẩm 1" src="~/Hinh/@item.anhbia">
+     </div> 
+     <div class="col-sm-9"> 
+         <h4 class="nomargin">@item.tenhoa</h4> 
+     </div> 
+    </div> 
+   </td> 
+          @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { @ma = item.mahoa}))
+          {
+           <td data-th="Price">@String.Format("{0:0,0}", item.dongia)</td> 
+           <td data-th="Quantity"><input class="form-control text-center" type="number" min="1" name="txtSoluong" value="@item.soluong" />
+           </td> 
+           <td class="text-center" data-th="Subtotal">@String.Format("{0:0,0}", item.ThanhTien)</td> 
+           <td class="actions" data-th="">
+            <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"><a class="btn btn-danger btn-sm" href="@Url.Action("XoaGioHang", "GioHang", new { ma = @item.mahoa })" style="color:white">Xóa</a></i>
+            </button>
+           </td> 
+           <td><button class="btn btn-info btn-sm" ><i class="fa fa-edit"><input class="btn btn-info btn-sm" type="submit" value="Cập nhật" /></i>
+    </button> </td>
+          }
+  </tr> </tbody>
+      }
+  <tfoot> 
+
+   <tr> 
+    <td><a class="btn btn-warning" href="#"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+    </td> 
+    <td class="hidden-xs" colspan="2"><strong style="color:red">Tổng số lượng: @ViewBag.TongSoLuong</strong></td> 
+    <td class="hidden-xs text-center"><strong style="color:red">Tổng Tiền: @String.Format("{0:0,0}", ViewBag.TongTien) VNĐ</strong>
+    </td> 
+    <td><a class="btn btn-success btn-block" href="@Url.Action("DatHang","GioHang")">Thanh toán <i class="fa fa-angle-right"></i></a>
+    </td> 
+   </tr> 
+  </tfoot> 
+ </table>
+</div>
+@*<h2 style="color: red">GIỎ HÀNG</h2>
+<table class ="table">
+    <tr>
+        <td>Mã Hoa</td>
+        <td>Tên Hoa</td>
+        <td>Ảnh bìa</td>
+        <td>Số lượng</td>
+        <td>Đơn giá</td>
+        <td>Thành tiền</td>
+        <td style="width:50px"></td>
+        <td style="width:50px"></td>
+        <td style="width:50px"></td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><h3>@item.mahoa</h3></td>
+            <td><h3>@item.tenhoa</h3></td>
+            <td>
+                <img src="~/Hinh/@item.anhbia" width="250px"/></td>
+            @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { @ma = item.mahoa}))
+            {
+            <td><input type="number" min="1" name="txtSoluong" value="@item.soluong" style="background-color:pink" /></td>
+            <td><h3>@String.Format("{0:0,0}", item.dongia)</h3></td>
+            <td><h3>@String.Format("{0:0,0}", item.ThanhTien)</h3></td>
+                <td><a href="@Url.Action("ChiTiet", "Home", new { id = item.mahoa})">Chi tiết</a></td>
+                <td>@Html.ActionLink("Xóa", "XoaGioHang", new { @ma = item.mahoa})</td>
+                <td><input type="submit" value="Cập Nhật" /></td>
+            }
+        </tr>
+    }
+    <tr>
+        <td colspan="4"><h2>Số lượng sách:</h2><h2 style="color: red">@ViewBag.TongSoLuong</h2></td>
+        <td colspan="5"><h2>Tổng tiền: </h2><h2 style="color: red">@String.Format("{0:0,0}", ViewBag.TongTien) VNĐ</h2></td>
+    </tr>
+    <tr style="font-weight:bold; color:blue; text-align:right">
+        <td colspan="9">
+            @Html.ActionLink("Xóa Giỏ Hàng","XoaTaCaGioHang")
+        </td>
+    </tr>
+</table>*@

@@ -1,0 +1,21 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model List<HOA>
+<div class="container-fluid">
+    <div style="text-align:center; color:blue; font:bold"><h4 class="item-group">NHỮNG SẢN PHẨM TƯƠNG TỰ</h4></div>
+    
+    <hr />
+    <div class="row text-center">
+        @foreach (var a in Model)
+	{
+            <div class="col-md-3 col-6 border-gray" style="border-radius:20px 20px; border-color:white; background-color:none">
+                <br />
+            <p class ="div-image"><a href="@Url.Action("ChiTiet", "Home", new { id = @a.MAHOA})"><img class="item-image" height="300px" width="100%" style="border-radius:20px 20px" src="~/Hinh/@a.ANHBIA" /></a></p>
+                <p class="item-name" style="color:red"> @a.TENHOA </p>
+                        <p class="gia" style="color:red"><h3>@String.Format("{0:0,0}", a.GIABAN) VNĐ</h3></p>
+            <button class="btn btn-danger btn-sm" ><i class="fa fa-shopping-cart" style="font-size:24px" ><a class="btn btn-danger btn-sm" href="@Url.Action("ThemGioHang", "GioHang", new { @ma = @a.MAHOA, @strUrl = Request.Url.ToString()})">Mua</a></i></button>
+            <br />
+            <br />
+        </div>
+	}
+    </div>
+</div>

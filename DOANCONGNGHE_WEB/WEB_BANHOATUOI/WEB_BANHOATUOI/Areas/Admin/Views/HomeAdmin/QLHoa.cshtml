@@ -1,0 +1,92 @@
+﻿
+@using WEB_BANHOATUOI.Models;
+@model PagedList.PagedList<WEB_BANHOATUOI.Models.HOA>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "QLHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@helper Truncate(string input, int lenght)
+{
+    if(input.Length < lenght)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0,lenght)<text>...</text>
+    }
+}
+<div><br /></div>
+<div class="container">
+    <div class="col-md-3">
+        <br />
+    </div>
+    <div class="col-md-6">
+        <form action ="@Url.Action("TimKiemHoa", "HomeAdmin")" method="post">
+            <input class="form-control" type="search" name="txttk" placeholder="Search" />
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <br />
+    </div>
+</div>
+<div class="container">
+
+    <p style="text-align:center">
+        <a href="@Url.Action("ThemMoiHoa","HomeAdmin")" class="btn btn-primary">Thêm Mới Hoa</a>
+    </p>
+    <table class="table table-hover table-condensed" id="cart">
+        <thead>
+            <tr>
+                <th style="width: 5%">MÃ HOA</th>
+                <th style="width: 10%">TÊN HOA</th>
+                <th style="width: 10%">GIÁ BÁN</th>
+                <th style="width: 30%">MÔ TẢ</th>
+                <th style="width: 10%">ẢNH BÌA</th>
+                <th style="width: 5%">NGÀY CẬP NHẬT</th>
+                <th style="width: 5%">MÃ CHỦ ĐỀ</th>
+                <th style="width: 5%">LOẠI</th>
+                <th style="width: 10%">CHỨC NĂNG</th>
+                <th style="width: 10%">CHỨC NĂNG</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MAHOA)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.TENHOA)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.GIABAN)</td>
+                    <td data-th="Product">@Truncate(item.MOTA,50)</td>
+                    <td data-th="Product">
+                        <img width="100" class="img-responsive" alt="Sản phẩm 1" src="~/Hinh/@item.ANHBIA">
+                    </td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.NGAYCAPNHAT)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MACHUDE)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.LOAI)</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash-o"><a class="btn btn-danger btn-sm" href="@Url.Action("XoaHoa", "HomeAdmin", new { id = item.MAHOA})" style="color: white">Xóa</a></i>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-info btn-sm">
+                            <i class="fa fa-edit">
+                                <a class="btn btn-priamry btn-sm" href="@Url.Action("CapNhatHoa", "HomeAdmin", new { id = item.MAHOA})" style="color: white">Cập nhật</a></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
+<div class="container">
+<p style="color:blue; text-align:center">Trang@(Model.PageCount < Model.PageNumber ?0: Model.PageNumber)/@Model.PageCount:</p>
+<div class="pagination justify-content-center">
+       @Html.PagedListPager(Model, page => Url.Action("QLHoa","HomeAdmin", new {page = page}))
+</div>
+
+</div>
+<link href="~/Content/bootstrap4.0/css/PhanTrang.css" rel="stylesheet" />

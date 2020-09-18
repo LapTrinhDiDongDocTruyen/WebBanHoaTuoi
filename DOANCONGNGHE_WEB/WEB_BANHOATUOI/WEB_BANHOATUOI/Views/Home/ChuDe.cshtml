@@ -1,0 +1,7 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model List<CHUDE>
+              @foreach(var a in Model)
+              {
+               <a class="dropdown-item"  href="@Url.Action("Hoa", "Home", new { m =@a.MACHUDE})" style="color:white; text-align:center">@a.TENCHUDE</a>
+               <div class="dropdown-divider"></div>
+              }

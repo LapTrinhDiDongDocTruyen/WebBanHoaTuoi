@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_SHOPHOATUOI" Class="SQLShopHoaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-TRI\SQLEXPRESS;Initial Catalog=QL_SHOPHOATUOI;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QL_SHOPHOATUOIConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TAIKHOANADMIN" Member="TAIKHOANADMINs">
+    <Type Name="TAIKHOANADMIN">
+      <Column Name="TENTK" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MK" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAI" Member="LOAIs">
+    <Type Name="LOAI">
+      <Column Name="MALOAI" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENLOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LOAI_HOA" Member="HOAs" ThisKey="MALOAI" OtherKey="LOAI" Type="HOA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="MAKH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAYSINH" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DIENTHOAI" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="TAIKHOAN" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="MATKHAU" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="QUYEN" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="KHACHHANG_DONHANG" Member="DONHANGs" ThisKey="MAKH" OtherKey="MAKH" Type="DONHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOA" Member="HOAs">
+    <Type Name="HOA">
+      <Column Name="MAHOA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENHOA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GIABAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MOTA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ANHBIA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MACHUDE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HOA_CHITIETDONHANG" Member="CHITIETDONHANGs" ThisKey="MAHOA" OtherKey="MAHOA" Type="CHITIETDONHANG" />
+      <Association Name="LOAI_HOA" Member="LOAI1" ThisKey="LOAI" OtherKey="MALOAI" Type="LOAI" IsForeignKey="true" />
+      <Association Name="CHUDE_HOA" Member="CHUDE" ThisKey="MACHUDE" OtherKey="MACHUDE" Type="CHUDE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHUDE" Member="CHUDEs">
+    <Type Name="CHUDE">
+      <Column Name="MACHUDE" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENCHUDE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="CHUDE_HOA" Member="HOAs" ThisKey="MACHUDE" OtherKey="MACHUDE" Type="HOA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONHANG" Member="CHITIETDONHANGs">
+    <Type Name="CHITIETDONHANG">
+      <Column Name="MADH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAHOA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONGIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HOA_CHITIETDONHANG" Member="HOA" ThisKey="MAHOA" OtherKey="MAHOA" Type="HOA" IsForeignKey="true" />
+      <Association Name="DONHANG_CHITIETDONHANG" Member="DONHANG" ThisKey="MADH" OtherKey="MADH" Type="DONHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONHANG" Member="DONHANGs">
+    <Type Name="DONHANG">
+      <Column Name="MADH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NGAYDAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYGIAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TINHTRANGTHANHTOAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TINHTRANGGIAOHANG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIACHIGIAOHANG" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MAKH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TONGTIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="DONHANG_CHITIETDONHANG" Member="CHITIETDONHANGs" ThisKey="MADH" OtherKey="MADH" Type="CHITIETDONHANG" />
+      <Association Name="KHACHHANG_DONHANG" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

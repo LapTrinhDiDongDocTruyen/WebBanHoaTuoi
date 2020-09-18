@@ -1,0 +1,39 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model List<CHITIETDONHANG>
+@{
+    ViewBag.Title = "XemChiTietDH";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div><br /></div>
+<div class="container">
+    <div><h5>THÔNG TIN CHI TIẾT ĐƠN HÀNG </h5></div>
+    <table class="table table-hover table-condensed" id="cart">
+        <thead>
+            <tr>
+                <th style="width: 40%">ẢNH BÌA</th>
+                <th style="width: 40%">TÊN HOA</th>
+                <th style="width: 10%">Số lượng</th>
+                <th style="width: 20%">ĐƠN GIÁ</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    @Html.Action("XemHoa", "HomeAdmin", new { id = @item.MAHOA })
+                    <td data-th="Product">
+                        <div>
+                            <p style="text-align:center">@item.SOLUONG</p>
+                        </div>
+                    </td>
+                    <td data-th="Product">
+                        <div>
+                            <p style="text-align:center">@String.Format("{0:0,0}", item.DONGIA) VNĐ</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+    <h5 style="text-align:center; color:red">TỔNG TIỀN LÀ: @String.Format("{0:0,0}",Session["TONGTIEN"]) VNĐ</h5>
+</div>

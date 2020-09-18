@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap4.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap4.0/css/Style.css" rel="stylesheet" />
+    <script src="~/Content/bootstrap4.0/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: 'textarea' })</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-light">
+        <!-- Brand -->
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "HomeAdmin")" style="color:white"><img src="~/Hinh/home_48px.png" />TRANG CHỦ</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 20px"><img src="~/Hinh/menu_48px.png" />DANH MỤC QUẢN LÝ</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item" href="@Url.Action("QLLoaiHoa", "HomeAdmin")" style="color: white; text-align: center">LOẠI HOA</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="@Url.Action("QLChuDe", "HomeAdmin")" style="color: white; text-align: center">CHỦ ĐỀ HOA</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="@Url.Action("QLHoa", "HomeAdmin")" style="color:white; text-align:center">HOA</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="@Url.Action("QLDonHang","HomeAdmin")" style="color: white; font-size: 20px"><img src="~/Hinh/edit_file_48px.png" />ĐƠN HÀNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white; font-size: 20px"><img src="~/Hinh/phone_48px.png" />LIÊN HỆ</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div>
+            @*@Html.Action("GioHangPartial","GioHang")*@
+        </div>
+        <div class="col-1">
+            <h4  style="color: white; font-size: 14px; width: 100px">@Session["TKAD"]</h4>
+            <a href="@Url.Action("DangXuat", "HomeAdmin")" style="color:blue">@Session["DX"] </a></div>
+    </nav>
+    <div class="row">
+        @RenderBody()
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="~/Content/bootstrap4.0/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/bootstrap4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

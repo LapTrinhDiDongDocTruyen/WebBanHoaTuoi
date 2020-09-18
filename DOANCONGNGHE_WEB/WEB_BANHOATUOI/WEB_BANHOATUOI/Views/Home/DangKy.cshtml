@@ -1,0 +1,156 @@
+﻿@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<br />
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <br />
+        <br />
+    </div>
+    <div class="col-md-6" style="background-color: #f81a73; border-radius: 15px 15px">
+        <h2 style="color: blue; text-align: center">ĐĂNG KÝ THÀNH VIÊN</h2>
+        <table style="width: 100%;">
+            @using (Html.BeginForm("DangKy", "Home"))
+            {
+                <tr>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Họ tên:</label>
+                            <input type="text" class="form-control" id="hoten" placeholder="Nhập họ và tên" name="hoten" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào họ và tên</div>
+                        </div>
+                    </td>
+                    <td style="width: 10%"></td>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Tên tài khoản:</label>
+                            <input type="text" class="form-control" id="tentk" placeholder="Nhập tên tài khoản" name="tentk" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào tên tài khoản</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Ngày sinh:</label>
+                            <input type="date" class="form-control" id="ngaysinh" placeholder="Nhập ngày sinh" name="ngaysinh" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào ngày sinh</div>
+                        </div>
+                    </td>
+                    <td style="width: 10%"></td>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Mật khẩu:</label>
+                            <input type="password" class="form-control" id="matkhau" placeholder="Nhập mật khẩu" name="matkhau" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào mật khẩu.</div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Giới tính:</label>
+                            <input name="gioitinh" id="gioitinh" placeholder="Nhập giới tính" type="radio" value="Nam" required />Nam
+                            <input name="gioitinh" id="gioitinh" placeholder="Nhập giới tính" type="radio" value="Nữ" required />Nữ
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào giới tính</div>
+                        </div>
+                    </td>
+                    <td style="width: 10%"></td>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="pwd" style="color: black">Nhập lại mật khẩu:</label>
+                            <input type="password" class="form-control" id="repswd" placeholder="Nhập lại mật khẩu" name="nhaplaimk" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng nhập lại mật khẩu.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">SĐT:</label>
+                            <input type="text" class="form-control" id="sdt" placeholder="Nhập số điện thoại" name="txtsdt" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào số điện thoại.</div>
+                        </div>
+                    </td>
+                    <td style="width: 10%"></td>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Nhập Email" name="email" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào địa chỉ email.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 40%">
+                        <div class="form-group">
+                            <label for="uname" style="color: black">Địa chỉ:</label>
+                            <input type="text" class="form-control" id="diachi" placeholder="Nhập địa chỉ" name="diachi" required>
+                            <div class="valid-feedback">Hợp lệ.</div>
+                            <div class="invalid-feedback">Vui lòng điền vào địa chỉ</div>
+                        </div>
+                    </td>
+                    <td style="width: 10%"></td>
+                    <td style="width: 40%">
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" required>
+                                <p style="color: black">Tôi đồng ý.</p>
+                                <div class="valid-feedback">Hợp lệ.</div>
+                                <div class="invalid-feedback">Nhấn vào đồng đý đăng ký để tiếp tục.</div>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        <button type="submit" class="btn btn-primary" style="width: 500px">Đăng ký</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <br /><p style="color:red">@ViewBag.ThongbaoDK</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<br />
+<br />
+<script>
+    // Disable form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

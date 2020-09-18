@@ -1,0 +1,77 @@
+﻿@model WEB_BANHOATUOI.Models.HOA
+
+@{
+    ViewBag.Title = "CapNhatHoa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <h5 style="text-align: center">CẬP NHẬT HOA</h5>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TENHOA, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TENHOA)
+                    @Html.ValidationMessageFor(model => model.TENHOA)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GIABAN, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GIABAN)
+                    @Html.ValidationMessageFor(model => model.GIABAN)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MOTA, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MOTA)
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <div class="col-md-10">
+                    Chọn ảnh mới
+                <input type="file" name="fileUp" />
+                    <img src="@Url.Content("~/Hinh/" + Model.ANHBIA)" width="120px" />(Ảnh hiện tại)
+                @ViewBag.ThongBao
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MACHUDE, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("MACHUDE")
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.LOAI, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("Loai")
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Cập nhật" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "QLHoa")
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

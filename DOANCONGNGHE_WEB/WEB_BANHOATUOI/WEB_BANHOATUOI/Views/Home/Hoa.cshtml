@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Hoa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using WEB_BANHOATUOI.Models;
+@model List<HOA>
+<div class="container-fluid">
+    <p class="item-group"></p>
+    <div class="row text-center">
+        @foreach (var a in Model)
+	{
+            <div class="col-md-3 col-sm-3 col-xm-3 col-6 border-gray" style="border-radius:20px 20px; border-color:white; background-color:none">
+                <br />
+            <p class ="div-image"><a href="@Url.Action("ChiTiet", "Home", new { id = @a.MAHOA})"><img class="item-image" height="300px" width="100%" style="border-radius:20px 20px" src="~/Hinh/@a.ANHBIA" /></a></p>
+                <h4 class="item-name" style="color:hotpink"> @a.TENHOA </h4>
+                        <p class="gia" style="color:white"><h3 style="color:red">@String.Format("{0:0,0}", a.GIABAN) VNĐ</h3></p>
+            <button class="btn btn-danger btn-sm" ><i class="fa fa-shopping-cart" style="font-size:24px" ><a class="btn btn-danger btn-sm" href="@Url.Action("ThemGioHang", "GioHang", new { @ma = @a.MAHOA, @strUrl = Request.Url.ToString()})">Mua</a></i></button>
+            <br />
+            <br />
+        </div>
+	}
+    </div>
+</div>
+

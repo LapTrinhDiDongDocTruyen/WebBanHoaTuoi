@@ -1,0 +1,71 @@
+﻿@using WEB_BANHOATUOI.Models;
+@model PagedList.PagedList<WEB_BANHOATUOI.Models.DONHANG>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "QLDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div><br /></div>
+<div class="container">
+    <div class="col-md-3">
+        <br />
+    </div>
+    <div class="col-md-6">
+        <form action ="@Url.Action("TimKiemDonHang", "HomeAdmin")" method="post">
+            <input class="form-control" type="date" name="txtngay" />
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <br />
+    </div>
+</div>
+<div class="container">
+    <table class="table table-hover table-condensed" id="cart">
+        <thead>
+            <tr>
+                <th style="width: 10%">MÃ ĐƠN HÀNG</th>
+                <th style="width: 20%">NGÀY ĐẶT</th>
+                <th style="width: 20%">NGÀY GIAO</th>
+                <th style="width: 40%">TÌNH TRẠNG THANH TOÁN</th>
+                <th style="width: 40%">TÌNH TRẠNG GIAO HÀNG</th>
+                <th style="width: 10%">MÃ KH</th>
+                <th style="width: 20%">TỔNG TIỀN</th>
+                <th style="width: 30%">CHỨC NĂNG</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MADH)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.NGAYDAT)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.NGAYGIAO)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.TINHTRANGTHANHTOAN)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.TINHTRANGGIAOHANG)</td>
+                    <td data-th="Product">@Html.DisplayFor(modelItem => item.MAKH)</td>
+                    <td data-th="Product">@String.Format("{0:0,0}", item.TONGTIEN) VNĐ</td>
+                    @*<td class="actions" data-th="">
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash-o"><a class="btn btn-danger btn-sm" href="@Url.Action("XoaDonHang", "HomeAdmin", new { id = item.MADH })" style="color: white">Xóa</a></i>
+                        </button>
+                    </td>*@
+                    <td>
+                        <button class="btn btn-info btn-sm">
+                            <i class="fa fa-infor">
+                                <a class="btn btn-priamry btn-sm" href="@Url.Action("XemChiTietDH", "HomeAdmin", new { id = item.MADH })" style="color: white">Xem chi tiết</a></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
+<div class="container">
+    <p style="color: blue; text-align: center">Trang@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount:</p>
+    <div class="pagination justify-content-center">
+        @Html.PagedListPager(Model, page => Url.Action("QLChuDe", "HomeAdmin", new { page = page }))
+    </div>
+
+</div>
+<link href="~/Content/bootstrap4.0/css/PhanTrang.css" rel="stylesheet" />

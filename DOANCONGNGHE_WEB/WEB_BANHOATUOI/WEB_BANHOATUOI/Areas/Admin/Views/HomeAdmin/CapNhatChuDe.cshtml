@@ -1,0 +1,33 @@
+﻿@model WEB_BANHOATUOI.Models.CHUDE
+
+@{
+    ViewBag.Title = "CapNhatChuDe";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <h5>CẬP NHẬT CHỦ ĐỀ</h5>
+    <hr />
+    @using (Html.BeginForm("CapNhatChuDe", "HomeAdmin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TENCHUDE, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <@Html.EditorFor(model => model.TENCHUDE)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cập nhật" class="btn btn-primary" />
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "QLChuDe")
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap4.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap4.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar-header" @*style="background-image:url(../Hinh/backgroundDangKy1.jpg); background-position: center center; background-repeat:no-repeat;background-attachment:fixed;background-size:cover"*@>
+        <img src="~/Hinh/anhtieude.jpg" width="100%" height="250px" />
+        <marquee width="100%" scrollamount="10" behavior="scroll" bgcolor="white">  
+    <h5 style="color:blue">Xin chào bạn đã đến với Shop Hoa Tươi Sinh Viên. Địa chỉ 140 Lê Trọng Tấn P.Tây Thạnh Q.Tân Phú TPHCM. Hotline: 0967579921 - 0375875212</h5>
+</marquee>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f81a73">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")" style="color:white"><img src="~/Hinh/home_48px.png" />TRANG CHỦ</a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 20px"><img src="~/Hinh/menu_48px.png" />CHỦ ĐỀ</a>
+                            <div class="dropdown-menu" style="background-color: #f81a73">
+                                @Html.Action("ChuDe", "Home")
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 20px"><img src="~/Hinh/flower_doodle_48px.png" />HOA TƯƠI</a>
+                            <div class="dropdown-menu" style="background-color: #f81a73">
+                                @Html.Action("LoaiHoa", "Home")
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white; font-size: 20px"><img src="~/Hinh/phone_48px.png" />LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            @Html.Action("GioHangPartial", "GioHang")
+                        </li>
+
+                    </ul>
+                    <form class="form-inline" action="@Url.Action("TimKiem", "Home")" method="post">
+                        <input class="form-control" type="search" name="tim" placeholder="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a href="@Session["DN"]" ><img src="~/Hinh/male_user_48px.png" /></a>
+            </div>
+            <div>
+                <h4 style="color: white; font-size: 14px; width: 100px">@Session["TK"]</h4>
+                <a href="@Url.Action("DangXuat")" style="color:blue">@Session["DX"] </a>
+
+            </div>
+        </nav>
+        <div>
+            <br />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9" >
+                    @Html.Action("HinhAnhDong", "Home")
+                </div>
+                <div class="col-md-3 content-right" style="background-color: #f81a73; border-radius:10px 10px">
+                    <ul class="nav flex-column" style="background: #f81a73; border-radius: 10px 10px">
+                        <li class="nav-item" style="border-radius: 10px 10px; height: 50px; background-color: #f81a73">
+                            <h4 style="font: bold; text-align: center; color: white">DANH MỤC CHỦ ĐỀ</h4>
+                        </li>
+                        @Html.Action("ChuDe", "Home")
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <br />
+        </div>
+        <div class="container">
+            <div class="navbar" style="background-color: #f81a73">
+                <div class="container">
+                    <div class="col-3 content-right">
+                    </div>
+                    <div class="col-6 col-12">
+                        <h3 style="text-align:center;color:white">SẢN PHẨM</h3>
+                    </div>
+                    <div class="col-3 content-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background-color: none">
+            @RenderBody()
+        </div>
+        <div>
+            <br />
+            <br />
+        </div>
+        <div class="footer">
+            <marquee width="100%" height="100px" behavior="alternate" style="border: 2px solid red">  
+                  <marquee behavior="alternate">  
+                    <img src="~/Hinh/tieude.jpg" width="200px" height="100px" />
+                    <img src="~/Hinh/tieude1.jpg" width="200px" height="100px" />
+                    <img src="~/Hinh/tieude4.jpg" width="200px" height="100px" />
+                    <img src="~/Hinh/tieude5.jpg" width="200px" height="100px" />
+                    <img src="~/Hinh/tieude6.jpg"  width="200px" height="100px"/>
+                    <img src="~/Hinh/tieude7.jpg" width="200px" height="100px" />
+                      <img src="~/Hinh/tieude8.jpg" width="200px" height="100px" />
+                      <img src="~/Hinh/tieude9.jpg" width="200px" height="100px" />
+                      <img src="~/Hinh/tieude10.jpg" width="200px" height="100px" />
+                      <img src="~/Hinh/tieude11.jpg" width="200px" height="100px" />
+                  </marquee>  
+                </marquee>
+        </div>
+        <div class="row" style="background-color: #f81a73">
+            <div class="col-md-6" style="float: left">
+                <div>
+                    <h4 style="color: white; text-align: center">SHOP BÁN HOA TƯƠI SINH VIÊN</h4>
+                    <h5 style="color: white"><i class="fa fa-map-marker" style="font-size: 24px">Địa chỉ:</i> 140 Lê Trọng Tấn Phường Tây Thành Quận Tân Phú TPHCM</h5>
+                    <h4 style="color: white"><i class="fa fa-envelope" style="font-size: 24px"></i><a href="#">
+                        <h5 style="color: white">Huynhngoctri1999@gmail.com</h5>
+                    </a></h4>
+                    <h4 style="color: white"><i class="fa fa-phone" style="font-size: 24px"></i><a href="#">
+                        <h5 style="color: red">0967579921 - 0375875212</h5>
+                    </a></h4>
+                </div>
+            </div>
+            <div class="col-md-6" style="float: left">
+                <div>
+                    <h4 style="color: white">THÔNG TIN THÊM</h4>
+                    <h5><a href="#" style="color: white">Chính sách & Quy định</a></h5>
+                    <h5><a href="#" style="color: white">Hình thức thanh toán</a></h5>
+                    <h5><a href="#" style="color: white">Chính sách vận chuyển</a></h5>
+                    <h5><a href="#" style="color: white">Chính sách bảo hành</a></h5>
+                    <h5><a href="#" style="color: white">Chính sách đổi trả</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="~/Content/bootstrap4.0/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/bootstrap4.0/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/bootstrap4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

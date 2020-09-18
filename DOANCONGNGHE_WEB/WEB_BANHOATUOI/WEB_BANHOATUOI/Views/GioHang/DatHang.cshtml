@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "DatHang";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@using WEB_BANHOATUOI.Models;
+@model List<GIOHANG>
+<div class="container"> 
+ <table class="table table-hover table-condensed" id="cart"> 
+  <thead> 
+   <tr> 
+    <th style="width:50%">Tên sản phẩm</th> 
+    <th style="width:10%">Giá</th> 
+    <th style="width:8%">Số lượng</th> 
+    <th class="text-center" style="width:22%">Thành tiền</th> 
+   </tr> 
+  </thead> 
+      @foreach(var item in Model)
+      {
+          <tbody>
+      <tr> 
+   <td data-th="Product"> 
+    <div class="row"> 
+     <div class="col-sm-3 hidden-xs"><img width="100" class="img-responsive" alt="Sản phẩm 1" src="~/Hinh/@item.anhbia">
+     </div> 
+     <div class="col-sm-9"> 
+         <h4 class="nomargin">@item.tenhoa</h4> 
+     </div> 
+    </div> 
+   </td> 
+           <td data-th="Price">@String.Format("{0:0,0}", item.dongia)</td> 
+           <td data-th="Quantity">@item.soluong"
+           </td> 
+           <td class="text-center" data-th="Subtotal">@String.Format("{0:0,0}", item.ThanhTien)</td> 
+  </tr> </tbody>
+      }
+  <tfoot> 
+
+   <tr> 
+    <td><a class="btn btn-warning" href="@Url.Action("GioHang","GioHang")"><i class="fa fa-angle-left"></i> TRỞ VỀ GIỎ HÀNG</a>
+    </td> 
+    <td class="hidden-xs" colspan="2"><strong style="color:red">Tổng số lượng: @ViewBag.TongSoLuong</strong></td> 
+    <td class="hidden-xs text-center"><strong style="color:red">Tổng Tiền: @String.Format("{0:0,0}", ViewBag.TongTien) VNĐ</strong>
+    </td> 
+    <td>
+    </td> 
+   </tr> 
+  </tfoot> 
+ </table>
+</div>
+<h2 style="text-align:center">THÔNG TIN ĐẶT HÀNG</h2>
+@{
+    KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
+}
+<table class="table table-hover table-condensed" id="cart"> 
+  <thead> 
+      @using (Html.BeginForm())
+      {
+          @Html.ValidationSummary();
+          <tr>
+           <td data-th="Product"> 
+            Họ tên khách hàng:
+           </td> 
+           <td data-th="Price">@kh.HOTEN</td> 
+        </tr>
+          <tr>
+           <td data-th="Product"> 
+            Địa chỉ:
+           </td> 
+           <td data-th="Price">@kh.DIACHI</td> 
+        </tr>
+          <tr>
+           <td data-th="Product"> 
+            Điện Thoại:
+           </td> 
+           <td data-th="Price">@kh.DIENTHOAI</td> 
+        </tr>
+          <tr>
+           <td data-th="Product"> 
+            Ngày đặt:
+           </td> 
+           <td data-th="Price">@DateTime.Now.ToShortDateString()</td> 
+        </tr>
+          <tr>
+           <td data-th="Product"> 
+            Ngày giao hàng:
+           </td> 
+           <td data-th="Price"><input type="date" name="NgayGiao" /></td> 
+        </tr>
+          <tr>
+           <td data-th="Product"> 
+            Địa chỉ giao hàng
+           </td> 
+           <td data-th="Price"><input type="text" name="diachigiao" /></td> 
+        </tr>
+          <tr style="text-align:center">
+           
+           <td colspan="2" data-th="Price"><input class="btn btn-success btn-block" type="submit" value="Đồng ý đặt hàng" /></td> 
+        </tr>
+      }
+</thead>
+ </table>

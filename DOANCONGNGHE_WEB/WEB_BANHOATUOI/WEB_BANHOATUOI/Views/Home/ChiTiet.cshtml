@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "ChiTiet";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+@using WEB_BANHOATUOI.Models
+@model HOA
+<br />
+<br />
+    <div class="row">
+        <div class="col-md-3" style="text-align:center">
+            <img src="~/Hinh/@Model.ANHBIA" style="border-radius:20px 20px" width="250px"/>
+            <h4 style="color: red"> @Model.TENHOA</h4>
+            <h5 style="color: red">@String.Format("{0:0,0}", Model.GIABAN) VNĐ</h5>
+            <div style="text-align:center">
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-shopping-cart" style="font-size:24px"><a class="btn btn-danger btn-sm" style="text-align: center" href="@Url.Action("ThemGioHang", "GioHang", new { @ma = @Model.MAHOA, @strURL = Request.Url.ToString() })">
+                                Đặt mua
+                            </a></i>
+                        </button>
+                    </div>
+            </div>
+        <div class="col-md-9" style="background-color:#f81a73; border-radius:20px 20px">
+            <div class="container mt-3">
+  <h2>THÔNG TIN CHI TIẾT HOA</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Mô Tả</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Hình thức thanh toán</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Chính sách và tài khoản</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h5>@Model.MOTA</h5>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <p>Bạn có thể chọn một số cách thanh toán sau:
+        <p style="color:white">1. Tiền mặt:</p>
+        <p style="color:white">1.1 Thanh toán trực tiếp tại văn phòng công ty</p>
+        Công ty Cổ phần Color Life
+        Địa chỉ 1: 270F Võ Thị Sáu, P.7, Q.3, Tp.Hồ Chí Minh (24/7)
+        ĐT: 028. 7300 2010 (24/7)  - 024.7300 2010  (24/7)
+          <p style="color:white">1.2 Thanh toán tiền mặt khi nhận hoa</p>
+        Chúng tôi hỗ trợ phương thức thanh toán COD (Cash on Delivery) - thanh toán tiền mặt khi giao hoa trong trường hợp bạn là người đặt và người nhận hoa, nhằm hỗ trợ tối đa việc đặt và nhận hàng.
+          <p style="color:white">1.3 Thu tiền mặt ở địa điểm khác</p>
+        Trong trường hợp bạn không phải người nhận hoa để thanh toán tiền mặt khi nhận hoa, bạn cũng không thể chuyển khoản hoặc đến văn phòng công ty Hoayeuthuong.com để thanh toán, chúng tôi hỗ trợ giao hoa và thu tiền ở 2 địa điểm khác nhau. Tuy nhiên, phương thức thanh toán này sẽ có thêm phí dịch vụ (tùy khu vực). Vui lòng liên hệ nhân viên để biết thêm chi tiết (email contact@hoayeuthuong.com hoặc hotline 028. 7300 2010 (24/7)  - 024.7300 2010  (24/7)
+        
+          <p style="color:white">2. Thanh toán chuyển khoản qua ngân hàng:</p>
+        Bạn đến bất kỳ ngân hàng nào ở Việt Nam để chuyển tiền theo thông tin bên dưới (bạn không nhất thiết phải có tài khoản ngân hàng)</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Chưa cập nhật</h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+        </div>
+        </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div id="cmt-1" style="background-color: #fff; border-radius: 10px; margin-top: 15px;">
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+                </div>
+<div>
+    <hr />
+    @Html.Action("SanPhamLQ", "Home", new { m = @Model.MACHUDE})
+    <br />
+<br />
+    <br />
+<br />
+</div>

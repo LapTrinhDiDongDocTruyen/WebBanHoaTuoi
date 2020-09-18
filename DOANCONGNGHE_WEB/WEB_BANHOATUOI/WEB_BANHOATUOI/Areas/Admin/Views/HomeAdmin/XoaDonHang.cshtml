@@ -1,0 +1,47 @@
+﻿@model WEB_BANHOATUOI.Models.DONHANG
+@using WEB_BANHOATUOI.Models;
+@{
+    ViewBag.Title = "XoaDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <h5 style="text-align:center">XÁC NHẬN XÓA ĐƠN HÀNG</h5>
+    <div>
+        <dl>
+            <dt>MÃ ĐƠN HÀNG</dt>
+            <dd>
+                @Html.DisplayFor(model => model.MADH)
+            </dd>
+            <dt>NGÀY ĐẶT</dt>
+            <dd>
+                @Html.DisplayFor(model => model.NGAYDAT)
+            </dd>
+            <dt>NGÀY GIAO</dt>
+            <dd>
+                @Html.DisplayFor(model => model.NGAYGIAO)
+            </dd>
+            <dt>TÌNH TRANG THANH TOÁN</dt>
+            <dd>
+                @Html.DisplayFor(model => model.TINHTRANGTHANHTOAN)
+            </dd>
+            <dt>TÌNH TRẠNG GIAO HÀNG</dt>
+            <dd>
+                @Html.DisplayFor(model => model.TINHTRANGGIAOHANG)
+            </dd>
+            <dt>MÃ KH</dt>
+            <dd>
+                @Html.DisplayFor(model => model.MADH)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken();
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-danger" />
+                @Html.ActionLink("Trở Về", "QLDonHang", new { @class="btn btn-warning"})
+            </div>
+        }
+    </div>
+</div>
